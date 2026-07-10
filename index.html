@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Instituto Amanhecer — Educação, meio ambiente e comunidade</title>
+<meta name="description" content="O Instituto Amanhecer promove educação, preservação ambiental e desenvolvimento comunitário no Brasil." data-i18n-attr="content:meta.description">
+<meta name="theme-color" content="#1B3A2B">
+<link rel="canonical" href="https://www.institutoamanhecer.org.br/">
+
+<!-- Open Graph / SEO social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Instituto Amanhecer">
+<meta property="og:title" content="Instituto Amanhecer — Educação, meio ambiente e comunidade" data-i18n-attr="content:meta.title">
+<meta property="og:description" content="Conheça nossos programas, seja voluntário ou faça uma doação." data-i18n-attr="content:meta.description">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Idiomas alternativos (preparado para futuras traduções via URLs dedicadas, se desejar) -->
+<link rel="alternate" hreflang="pt-BR" href="https://www.institutoamanhecer.org.br/">
+<link rel="alternate" hreflang="en" href="https://www.institutoamanhecer.org.br/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://www.institutoamanhecer.org.br/">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Dados estruturados (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Instituto Amanhecer",
+  "url": "https://www.institutoamanhecer.org.br/",
+  "logo": "https://www.institutoamanhecer.org.br/assets/img/logo.svg",
+  "description": "Organização sem fins lucrativos dedicada à educação, ao meio ambiente e ao desenvolvimento comunitário no Brasil.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua das Acácias, 245",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "04000-000",
+    "addressCountry": "BR"
+  },
+  "sameAs": [
+    "https://www.facebook.com/institutoamanhecer",
+    "https://www.linkedin.com/company/institutoamanhecer",
+    "https://www.instagram.com/institutoamanhecer",
+    "https://www.youtube.com/@institutoamanhecer"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo" data-i18n="skip_link">Pular para o conteúdo principal</a>
+
+<!-- ===================== SVG SPRITE ===================== -->
+<div aria-hidden="true">
+  <object data="assets/img/icons.svg" type="image/svg+xml" style="display:none" title="icons"></object>
+</div>
+
+<!-- ===================== CABEÇALHO / MENU ===================== -->
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a href="#topo" class="brand" aria-label="Instituto Amanhecer — página inicial">
+      <img src="assets/img/logo.svg" alt="Instituto Amanhecer" width="180" height="40">
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#programas" data-i18n="nav.programs">Programas</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galeria</a></li>
+        <li><a href="#voluntariado" data-i18n="nav.volunteer">Voluntariado</a></li>
+        <li><a href="#parceiros" data-i18n="nav.partners">Parceiros</a></li>
+        <li><a href="#documentos" data-i18n="nav.documents">Documentos</a></li>
+        <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="searchOpen" aria-haspopup="dialog" aria-controls="searchOverlay">
+        <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-search"></use></svg>
+        <span class="visually-hidden" data-i18n="nav.search_open">Abrir busca</span>
+      </button>
+      <button type="button" class="lang-btn" id="langToggle" aria-label="Switch language / Mudar idioma">
+        <span data-i18n="nav.lang_switch">English</span>
+      </button>
+      <a href="#doar" class="btn btn-donate donate-header">
+        <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-heart"></use></svg>
+        <span data-i18n="nav.donate">Doar</span>
+      </a>
+      <button type="button" class="icon-btn menu-toggle" id="menuOpen" aria-haspopup="dialog" aria-controls="mobileNav">
+        <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-menu"></use></svg>
+        <span class="visually-hidden" data-i18n="nav.menu_open">Abrir menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mobile-nav__top">
+    <button type="button" class="icon-btn" id="menuClose">
+      <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-close"></use></svg>
+      <span class="visually-hidden" data-i18n="nav.menu_close">Fechar menu</span>
+    </button>
+  </div>
+  <ul>
+    <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+    <li><a href="#programas" data-i18n="nav.programs">Programas</a></li>
+    <li><a href="#galeria" data-i18n="nav.gallery">Galeria</a></li>
+    <li><a href="#videos" data-i18n="nav.videos">Vídeos</a></li>
+    <li><a href="#voluntariado" data-i18n="nav.volunteer">Voluntariado</a></li>
+    <li><a href="#parceiros" data-i18n="nav.partners">Parceiros</a></li>
+    <li><a href="#documentos" data-i18n="nav.documents">Documentos</a></li>
+    <li><a href="#mapa" data-i18n="nav.home">Localização</a></li>
+    <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+  </ul>
+  <div class="mobile-nav__footer">
+    <a href="#doar" class="btn btn-donate btn-block">
+      <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-heart"></use></svg>
+      <span data-i18n="nav.donate">Doar</span>
+    </a>
+  </div>
+</div>
+
+<!-- Busca -->
+<div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+  <button type="button" class="icon-btn search-overlay-close" id="searchClose">
+    <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-close"></use></svg>
+    <span class="visually-hidden" data-i18n="search.close">Fechar busca</span>
+  </button>
+  <div class="search-panel">
+    <h2 id="searchTitle" data-i18n="search.title">Buscar no site</h2>
+    <form class="search-form" id="searchForm" role="search">
+      <label class="visually-hidden" for="searchInput" data-i18n="search.title">Buscar no site</label>
+      <input type="search" id="searchInput" data-i18n-attr="placeholder:search.placeholder" placeholder="Digite uma palavra-chave…" autocomplete="off">
+      <button type="submit" data-i18n="search.button">Buscar</button>
+    </form>
+    <p class="search-hint" data-i18n="search.hint">Experimente: voluntário, doação, relatório, programas</p>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<main id="conteudo">
+
+  <!-- ===================== BANNER INICIAL / HERO ===================== -->
+  <section class="hero" id="topo">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Instituto Amanhecer · desde 2010</p>
+        <h1 class="hero__title">
+          <span data-i18n="hero.title_line1">Raízes que</span>
+          <span class="accent" data-i18n="hero.title_line2">transformam</span>
+          <span data-i18n="hero.title_line3">comunidades.</span>
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Unimos educação, meio ambiente e cooperação para gerar oportunidades reais em comunidades de todo o Brasil.</p>
+        <div class="hero__ctas">
+          <a href="#voluntariado" class="btn btn-primary">
+            <span data-i18n="hero.cta_primary">Quero ser voluntário</span>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg>
+          </a>
+          <a href="#programas" class="btn btn-outline" data-i18n="hero.cta_secondary">Conhecer os programas</a>
+        </div>
+        <div class="hero__scroll">
+          <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-chevron-down"></use></svg>
+          <span data-i18n="hero.scroll_hint">Role para conhecer nosso trabalho</span>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <img src="assets/img/hero-art.svg" alt="" width="600" height="600" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <div class="ring-divider" aria-hidden="true">
+    <svg viewBox="0 0 120 60"><circle cx="60" cy="60" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="60" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="60" r="45" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+  </div>
+
+  <!-- ===================== ESTATÍSTICAS ===================== -->
+  <section class="section stats" aria-labelledby="statsHeading">
+    <div class="container">
+      <h2 id="statsHeading" data-i18n="stats.title">Nosso impacto em números</h2>
+      <div class="stats__grid">
+        <div><div class="stats__num" data-i18n="stats.item1_num">12.400+</div><div class="stats__label" data-i18n="stats.item1_label">pessoas atendidas</div></div>
+        <div><div class="stats__num" data-i18n="stats.item2_num">38</div><div class="stats__label" data-i18n="stats.item2_label">comunidades parceiras</div></div>
+        <div><div class="stats__num" data-i18n="stats.item3_num">76.000</div><div class="stats__label" data-i18n="stats.item3_label">mudas nativas plantadas</div></div>
+        <div><div class="stats__num" data-i18n="stats.item4_num">540</div><div class="stats__label" data-i18n="stats.item4_label">voluntários ativos</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section" id="sobre" data-search-section data-search-title="Sobre">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="eyebrow" data-i18n="about.eyebrow">Quem somos</p>
+        <h2 data-i18n="about.title">Uma rede de pessoas cultivando futuro</h2>
+        <p data-i18n="about.p1">O Instituto Amanhecer é uma organização sem fins lucrativos que atua há mais de uma década no fortalecimento de comunidades por meio da educação, da preservação ambiental e da geração de renda.</p>
+        <p data-i18n="about.p2">Acreditamos que transformação social duradoura nasce de raízes fortes: escuta atenta, parcerias de confiança e ação contínua ao lado das comunidades, nunca à distância delas.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <h3><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-leaf"></use></svg><span data-i18n="about.mission_title">Missão</span></h3>
+          <p data-i18n="about.mission_text">Ampliar oportunidades de educação, renda e qualidade de vida em comunidades vulneráveis, com respeito ao meio ambiente.</p>
+        </div>
+        <div class="pillar">
+          <h3><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg><span data-i18n="about.vision_title">Visão</span></h3>
+          <p data-i18n="about.vision_text">Ser referência nacional em desenvolvimento comunitário sustentável, replicável e conduzido pelas próprias comunidades.</p>
+        </div>
+        <div class="pillar">
+          <h3><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-handshake"></use></svg><span data-i18n="about.values_title">Valores</span></h3>
+          <p data-i18n="about.values_text">Transparência, escuta ativa, sustentabilidade, colaboração e respeito às diversidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAMAS ===================== -->
+  <section class="section section--raised" id="programas" data-search-section data-search-title="Programas">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="programs.eyebrow">O que fazemos</p>
+        <h2 data-i18n="programs.title">Programas que geram raízes</h2>
+        <p data-i18n="programs.intro">Cada programa nasce de uma escuta real com as comunidades onde atuamos.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-graduation"></use></svg></div>
+          <h3 data-i18n="programs.card1_title">Educação Comunitária</h3>
+          <p data-i18n="programs.card1_text">Reforço escolar, oficinas de leitura e formação de jovens multiplicadores em 24 comunidades.</p>
+          <a href="#contato"><span data-i18n="programs.learn_more">Saiba mais</span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg></a>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-leaf"></use></svg></div>
+          <h3 data-i18n="programs.card2_title">Reflorestamento</h3>
+          <p data-i18n="programs.card2_text">Recuperação de áreas degradadas com espécies nativas e viveiros geridos pela comunidade local.</p>
+          <a href="#contato"><span data-i18n="programs.learn_more">Saiba mais</span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg></a>
+        </article>
+        <article class="card">
+          <div class="card__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-users"></use></svg></div>
+          <h3 data-i18n="programs.card3_title">Renda e Cooperativismo</h3>
+          <p data-i18n="programs.card3_text">Capacitação profissional e apoio à formação de cooperativas de trabalho e economia solidária.</p>
+          <a href="#contato"><span data-i18n="programs.learn_more">Saiba mais</span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA DE FOTOS ===================== -->
+  <section class="section" id="galeria" data-search-section data-search-title="Galeria de fotos">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Registros</p>
+        <h2 data-i18n="gallery.title">Galeria de fotos</h2>
+        <p data-i18n="gallery.intro">Momentos das ações do Instituto Amanhecer com comunidades, voluntários e parceiros.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-1.svg"><img src="assets/img/gallery-1.svg" alt="" data-i18n-attr="alt:gallery.img1_alt" loading="lazy" width="400" height="300"></button>
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-2.svg"><img src="assets/img/gallery-2.svg" alt="" data-i18n-attr="alt:gallery.img2_alt" loading="lazy" width="400" height="300"></button>
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-3.svg"><img src="assets/img/gallery-3.svg" alt="" data-i18n-attr="alt:gallery.img3_alt" loading="lazy" width="400" height="300"></button>
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-4.svg"><img src="assets/img/gallery-4.svg" alt="" data-i18n-attr="alt:gallery.img4_alt" loading="lazy" width="400" height="300"></button>
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-5.svg"><img src="assets/img/gallery-5.svg" alt="" data-i18n-attr="alt:gallery.img5_alt" loading="lazy" width="400" height="300"></button>
+        <button type="button" class="gallery-item" data-full="assets/img/gallery-6.svg"><img src="assets/img/gallery-6.svg" alt="" data-i18n-attr="alt:gallery.img6_alt" loading="lazy" width="400" height="300"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+    <button type="button" class="icon-btn lightbox__close" id="lightboxClose"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-close"></use></svg><span class="visually-hidden" data-i18n="gallery.lightbox_close">Fechar</span></button>
+    <button type="button" class="icon-btn lightbox__prev" id="lightboxPrev"><svg aria-hidden="true" style="transform:rotate(180deg)"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg><span class="visually-hidden" data-i18n="gallery.lightbox_prev">Anterior</span></button>
+    <img src="" alt="" id="lightboxImg">
+    <button type="button" class="icon-btn lightbox__next" id="lightboxNext"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg><span class="visually-hidden" data-i18n="gallery.lightbox_next">Próxima</span></button>
+  </div>
+
+  <!-- ===================== GALERIA DE VÍDEOS ===================== -->
+  <section class="section section--raised" id="videos" data-search-section data-search-title="Galeria de vídeos">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="videos.eyebrow">Assista</p>
+        <h2 data-i18n="videos.title">Galeria de vídeos</h2>
+        <p data-i18n="videos.intro">Conheça de perto o nosso trabalho e as histórias que ele transforma.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-card__frame" data-video-id="dQw4w9WgXcQ">
+            <img src="assets/img/video-1.svg" alt="" loading="lazy">
+            <button type="button" class="video-card__play"><span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-play"></use></svg></span><span class="visually-hidden" data-i18n="videos.play">Reproduzir vídeo</span></button>
+          </div>
+          <p class="video-card__title" data-i18n="videos.video1_title">Um dia com o Instituto Amanhecer</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__frame" data-video-id="dQw4w9WgXcQ">
+            <img src="assets/img/video-2.svg" alt="" loading="lazy">
+            <button type="button" class="video-card__play"><span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-play"></use></svg></span><span class="visually-hidden" data-i18n="videos.play">Reproduzir vídeo</span></button>
+          </div>
+          <p class="video-card__title" data-i18n="videos.video2_title">Reflorestamento: da muda à mata</p>
+        </div>
+        <div class="video-card">
+          <div class="video-card__frame" data-video-id="dQw4w9WgXcQ">
+            <img src="assets/img/video-3.svg" alt="" loading="lazy">
+            <button type="button" class="video-card__play"><span><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-play"></use></svg></span><span class="visually-hidden" data-i18n="videos.play">Reproduzir vídeo</span></button>
+          </div>
+          <p class="video-card__title" data-i18n="videos.video3_title">Depoimentos de quem participa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VOLUNTARIADO ===================== -->
+  <section class="section form-section" id="voluntariado" data-search-section data-search-title="Seja voluntário">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="volunteer.eyebrow">Participe</p>
+        <h2 data-i18n="volunteer.title">Seja voluntário</h2>
+        <p data-i18n="volunteer.intro">Preencha o formulário e nossa equipe entrará em contato com as próximas oportunidades.</p>
+      </div>
+      <form class="app-form" name="voluntariado" method="POST" data-netlify="true" netlify-honeypot="empresa" id="volunteerForm">
+        <input type="hidden" name="form-name" value="voluntariado">
+        <p class="visually-hidden"><label>Não preencher: <input name="empresa" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-grid form-grid--2">
+          <div class="field">
+            <label for="volName" data-i18n="volunteer.name">Nome completo</label>
+            <input type="text" id="volName" name="nome" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="volEmail" data-i18n="volunteer.email">E-mail</label>
+            <input type="email" id="volEmail" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="volPhone" data-i18n="volunteer.phone">Telefone / WhatsApp</label>
+            <input type="tel" id="volPhone" name="telefone" required autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="volCity" data-i18n="volunteer.city">Cidade</label>
+            <input type="text" id="volCity" name="cidade" required autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label for="volArea" data-i18n="volunteer.area">Área de interesse</label>
+            <select id="volArea" name="area" required>
+              <option value="educacao" data-i18n="volunteer.area_education">Educação</option>
+              <option value="meio-ambiente" data-i18n="volunteer.area_environment">Meio ambiente</option>
+              <option value="eventos" data-i18n="volunteer.area_events">Eventos e captação</option>
+              <option value="administrativo" data-i18n="volunteer.area_admin">Administrativo</option>
+            </select>
+          </div>
+          <fieldset class="field--full">
+            <legend data-i18n="volunteer.availability">Disponibilidade</legend>
+            <div class="checkbox-row">
+              <label><input type="checkbox" name="disponibilidade" value="semana"><span data-i18n="volunteer.availability_weekday">Dias de semana</span></label>
+              <label><input type="checkbox" name="disponibilidade" value="fimdesemana"><span data-i18n="volunteer.availability_weekend">Fins de semana</span></label>
+              <label><input type="checkbox" name="disponibilidade" value="remoto"><span data-i18n="volunteer.availability_remote">Remoto</span></label>
+            </div>
+          </fieldset>
+          <div class="field field--full">
+            <label for="volMessage" data-i18n="volunteer.message">Conte um pouco sobre você</label>
+            <textarea id="volMessage" name="mensagem" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="volunteer.submit">Enviar cadastro</button>
+          <p class="form-note" data-i18n="volunteer.privacy_note">Seus dados são usados apenas para contato do Instituto Amanhecer.</p>
+        </div>
+        <p class="form-success" data-i18n="volunteer.success" role="status">Obrigado! Recebemos seu cadastro e entraremos em contato em breve.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== PARCEIROS ===================== -->
+  <section class="section section--raised form-section" id="parceiros" data-search-section data-search-title="Seja um parceiro">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="partners.eyebrow">Institucional</p>
+        <h2 data-i18n="partners.title">Seja um parceiro</h2>
+        <p data-i18n="partners.intro">Empresas e instituições podem apoiar nossos programas por meio de patrocínio, doação de materiais ou parcerias técnicas.</p>
+      </div>
+      <form class="app-form" name="parceiros" method="POST" data-netlify="true" netlify-honeypot="site" id="partnersForm">
+        <input type="hidden" name="form-name" value="parceiros">
+        <p class="visually-hidden"><label>Não preencher: <input name="site" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-grid form-grid--2">
+          <div class="field">
+            <label for="parOrg" data-i18n="partners.org_name">Nome da empresa/instituição</label>
+            <input type="text" id="parOrg" name="organizacao" required>
+          </div>
+          <div class="field">
+            <label for="parContact" data-i18n="partners.contact_name">Pessoa responsável</label>
+            <input type="text" id="parContact" name="responsavel" required>
+          </div>
+          <div class="field">
+            <label for="parEmail" data-i18n="partners.email">E-mail corporativo</label>
+            <input type="email" id="parEmail" name="email" required>
+          </div>
+          <div class="field">
+            <label for="parPhone" data-i18n="partners.phone">Telefone</label>
+            <input type="tel" id="parPhone" name="telefone">
+          </div>
+          <div class="field field--full">
+            <label for="parType" data-i18n="partners.partnership_type">Tipo de parceria</label>
+            <select id="parType" name="tipo" required>
+              <option value="patrocinio" data-i18n="partners.type_sponsorship">Patrocínio financeiro</option>
+              <option value="materiais" data-i18n="partners.type_materials">Doação de materiais</option>
+              <option value="tecnico" data-i18n="partners.type_technical">Apoio técnico/consultoria</option>
+              <option value="outro" data-i18n="partners.type_other">Outro</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="parMessage" data-i18n="partners.message">Descreva a proposta de parceria</label>
+            <textarea id="parMessage" name="mensagem" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" data-i18n="partners.submit">Enviar proposta</button>
+        </div>
+        <p class="form-success" data-i18n="partners.success" role="status">Proposta recebida! Nossa equipe de parcerias retornará em breve.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== DOCUMENTOS / PDFs ===================== -->
+  <section class="section" id="documentos" data-search-section data-search-title="Documentos e relatórios">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="documents.eyebrow">Transparência</p>
+        <h2 data-i18n="documents.title">Documentos e relatórios</h2>
+        <p data-i18n="documents.intro">Publicamos anualmente nossos relatórios de atividades e prestação de contas.</p>
+      </div>
+      <div class="doc-list">
+        <div class="doc-item">
+          <div class="doc-item__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-file"></use></svg></div>
+          <div class="doc-item__text">
+            <h3 data-i18n="documents.doc1_title">Relatório Anual 2025</h3>
+            <p data-i18n="documents.doc1_desc">Resultados, indicadores de impacto e prestação de contas do ano.</p>
+          </div>
+          <a class="btn btn-outline" href="assets/docs/relatorio-anual-2025.pdf" download>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-download"></use></svg>
+            <span data-i18n="documents.download">Baixar PDF</span>
+          </a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-item__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-file"></use></svg></div>
+          <div class="doc-item__text">
+            <h3 data-i18n="documents.doc2_title">Estatuto Social</h3>
+            <p data-i18n="documents.doc2_desc">Documento constitutivo e regimento interno da organização.</p>
+          </div>
+          <a class="btn btn-outline" href="assets/docs/estatuto-social.pdf" download>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-download"></use></svg>
+            <span data-i18n="documents.download">Baixar PDF</span>
+          </a>
+        </div>
+        <div class="doc-item">
+          <div class="doc-item__icon"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-file"></use></svg></div>
+          <div class="doc-item__text">
+            <h3 data-i18n="documents.doc3_title">Balanço Financeiro 2025</h3>
+            <p data-i18n="documents.doc3_desc">Demonstrativo financeiro auditado por terceiros.</p>
+          </div>
+          <a class="btn btn-outline" href="assets/docs/balanco-financeiro-2025.pdf" download>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-download"></use></svg>
+            <span data-i18n="documents.download">Baixar PDF</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAPA ===================== -->
+  <section class="section section--raised" id="mapa" data-search-section data-search-title="Nossa sede">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="map.eyebrow">Onde estamos</p>
+        <h2 data-i18n="map.title">Nossa sede</h2>
+        <p data-i18n="map.intro">Visitas são bem-vindas mediante agendamento prévio.</p>
+      </div>
+      <div class="map-frame">
+        <iframe
+          title="Mapa de localização do Instituto Amanhecer"
+          src="https://www.google.com/maps?q=Avenida+Paulista,+São+Paulo&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="section form-section" id="contato" data-search-section data-search-title="Fale conosco">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Fale conosco</p>
+        <h2 data-i18n="contact.title">Envie uma mensagem</h2>
+        <p data-i18n="contact.intro">Dúvidas, sugestões ou imprensa: use o formulário abaixo ou nossos canais diretos.</p>
+      </div>
+      <div class="about__grid">
+        <form class="app-form" name="contato" method="POST" data-netlify="true" netlify-honeypot="assunto2" id="contactForm">
+          <input type="hidden" name="form-name" value="contato">
+          <p class="visually-hidden"><label>Não preencher: <input name="assunto2" tabindex="-1" autocomplete="off"></label></p>
+          <div class="form-grid form-grid--2">
+            <div class="field">
+              <label for="conName" data-i18n="contact.name">Nome</label>
+              <input type="text" id="conName" name="nome" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="conEmail" data-i18n="contact.email">E-mail</label>
+              <input type="email" id="conEmail" name="email" required autocomplete="email">
+            </div>
+            <div class="field field--full">
+              <label for="conSubject" data-i18n="contact.subject">Assunto</label>
+              <input type="text" id="conSubject" name="assunto" required>
+            </div>
+            <div class="field field--full">
+              <label for="conMessage" data-i18n="contact.message">Mensagem</label>
+              <textarea id="conMessage" name="mensagem" rows="5" required></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar mensagem</button>
+          </div>
+          <p class="form-success" data-i18n="contact.success" role="status">Mensagem enviada! Responderemos o mais breve possível.</p>
+        </form>
+
+        <ul class="footer-contact" style="display:flex; flex-direction:column; gap:18px;">
+          <li>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-map-pin"></use></svg>
+            <span><strong data-i18n="contact.address_title">Endereço</strong><br><span data-i18n="contact.address_text">Rua das Acácias, 245 — Vila Esperança, São Paulo/SP — CEP 04000-000</span></span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-mail"></use></svg>
+            <span><strong data-i18n="contact.email_title">E-mail</strong><br><a href="mailto:contato@institutoamanhecer.org.br">contato@institutoamanhecer.org.br</a></span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-phone"></use></svg>
+            <span><strong data-i18n="contact.phone_title">Telefone</strong><br><a href="tel:+551140000000">+55 11 4000-0000</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOAÇÃO ===================== -->
+  <section class="section donate" id="doar">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="donate.eyebrow">Apoie</p>
+        <h2 data-i18n="donate.title">Sua doação planta futuro</h2>
+        <p data-i18n="donate.text">Qualquer valor ajuda a manter nossos programas de educação e reflorestamento ativos o ano todo.</p>
+      </div>
+      <div class="donate__ctas">
+        <button type="button" class="btn btn-donate" id="donateOpen">
+          <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-heart"></use></svg>
+          <span data-i18n="donate.cta">Fazer doação</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="donateModal" role="dialog" aria-modal="true" aria-labelledby="donateModalTitle">
+    <div class="modal">
+      <button type="button" class="icon-btn modal__close" id="donateClose"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-close"></use></svg><span class="visually-hidden" data-i18n="donate.modal_close">Fechar</span></button>
+      <h2 id="donateModalTitle" data-i18n="donate.modal_title">Como doar</h2>
+      <p data-i18n="donate.modal_text">Escolha a forma mais conveniente para apoiar o Instituto Amanhecer:</p>
+      <dl>
+        <div><dt data-i18n="donate.modal_pix_label">Chave Pix (CNPJ)</dt><dd data-i18n="donate.modal_pix_value">00.000.000/0001-00</dd></div>
+        <div><dt data-i18n="donate.modal_bank_label">Transferência bancária</dt><dd data-i18n="donate.modal_bank_value">Banco 000 · Agência 0001 · Conta 00000-0</dd></div>
+      </dl>
+      <p class="form-note" data-i18n="donate.modal_note">Substitua estes dados pelas informações reais de doação antes de publicar o site.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.svg" alt="Instituto Amanhecer" width="170" height="38" style="filter:brightness(0) invert(1)">
+        <p data-i18n="footer.about_text">Organização sem fins lucrativos dedicada à educação, ao meio ambiente e ao desenvolvimento comunitário no Brasil.</p>
+        <div class="social-row" style="margin-top:18px;">
+          <a href="https://www.facebook.com/institutoamanhecer" aria-label="Facebook" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-facebook"></use></svg></a>
+          <a href="https://www.linkedin.com/company/institutoamanhecer" aria-label="LinkedIn" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-linkedin"></use></svg></a>
+          <a href="https://www.instagram.com/institutoamanhecer" aria-label="Instagram" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-instagram"></use></svg></a>
+          <a href="https://www.youtube.com/@institutoamanhecer" aria-label="YouTube" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-youtube"></use></svg></a>
+          <a href="https://wa.me/551140000000" aria-label="WhatsApp" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.links_title">Links rápidos</h3>
+        <ul>
+          <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="#programas" data-i18n="nav.programs">Programas</a></li>
+          <li><a href="#voluntariado" data-i18n="nav.volunteer">Voluntariado</a></li>
+          <li><a href="#parceiros" data-i18n="nav.partners">Parceiros</a></li>
+          <li><a href="#documentos" data-i18n="nav.documents">Documentos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.contact_title">Contato</h3>
+        <ul class="footer-contact">
+          <li><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-mail"></use></svg><a href="mailto:contato@institutoamanhecer.org.br">contato@institutoamanhecer.org.br</a></li>
+          <li><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-phone"></use></svg><a href="tel:+551140000000">+55 11 4000-0000</a></li>
+          <li><svg aria-hidden="true"><use href="assets/img/icons.svg#icon-map-pin"></use></svg><span data-i18n="contact.address_text">Rua das Acácias, 245 — Vila Esperança, São Paulo/SP</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.newsletter_title">Receba novidades</h3>
+        <form class="newsletter" name="newsletter" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter">
+          <label class="visually-hidden" for="newsEmail" data-i18n="footer.newsletter_placeholder">Seu e-mail</label>
+          <input type="email" id="newsEmail" name="email" data-i18n-attr="placeholder:footer.newsletter_placeholder" placeholder="Seu e-mail" required>
+          <button type="submit" data-i18n="footer.newsletter_submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span data-i18n="footer.copyright">Instituto Amanhecer. Todos os direitos reservados.</span> · <span data-i18n="footer.cnpj">CNPJ 00.000.000/0001-00</span></span>
+      <span class="legal-links">
+        <a href="#" data-i18n="footer.legal_privacy">Política de Privacidade</a>
+        <a href="#" data-i18n="footer.legal_terms">Termos de Uso</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/551140000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+  <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-whatsapp"></use></svg>
+</a>
+
+<button type="button" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <svg aria-hidden="true"><use href="assets/img/icons.svg#icon-arrow-right"></use></svg>
+</button>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

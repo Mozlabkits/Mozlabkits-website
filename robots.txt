@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.institutoamanhecer.org.br/sitemap.xml
