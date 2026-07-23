@@ -1,8 +1,8 @@
-# Instituto Amanhecer — Site institucional
+Mozlabkits — Site institucional
 
 Site institucional completo, responsivo, bilíngue (PT/EN) e pronto para publicação gratuita, construído apenas com **HTML, CSS e JavaScript puros** (sem frameworks, sem etapa de build). Isso o torna muito rápido e fácil de publicar em qualquer hospedagem estática.
 
-> **Sobre o conteúdo:** este projeto usa "Instituto Amanhecer", uma ONG fictícia, como exemplo funcional e completo. Troque textos, imagens, PDFs, e-mails, telefones e links por dados reais antes de publicar — veja a seção **"O que trocar antes de publicar"**.
+> **Sobre o conteúdo:** este projeto usa "Mozlabkits", uma ONG fictícia, como exemplo funcional e completo. Troque textos, imagens, PDFs, e-mails, telefones e links por dados reais antes de publicar — veja a seção **"O que trocar antes de publicar"**.
 
 ---
 
